@@ -64,6 +64,8 @@ pub enum HtmlTag {
     Image,
     /// An inline quote
     InlineQuote,
+    /// An italic text part
+    Italic,
     /// A manual line break
     LineBreak,
     /// A link to another page or resource
@@ -84,6 +86,8 @@ pub enum HtmlTag {
     Section,
     /// A subsection of text
     Span,
+    /// A bold text part
+    Strong,
     /// A table element
     Table,
     /// The table body
@@ -146,6 +150,7 @@ impl HtmlTag {
             Self::Iframe => "iframe",
             Self::Image => "img",
             Self::InlineQuote => "q",
+            Self::Italic => "i",
             Self::LineBreak => "br",
             Self::Link => "a",
             Self::ListElement => "li",
@@ -156,6 +161,7 @@ impl HtmlTag {
             Self::PreformattedText => "pre",
             Self::Section => "section",
             Self::Span => "span",
+            Self::Strong => "strong",
             Self::Table => "table",
             Self::TableBody => "tbody",
             Self::TableCaption => "caption",
